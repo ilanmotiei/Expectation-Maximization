@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib as plt
-import scipy  # only used for calculating pmf of poisson distribution
+from scipy.stats import poisson as ps  # only used for calculating pmf of poisson distribution
 
 def generate(n_samples, c, lambds):
     Data = np.ndarray(shape=(n_samples, ))
@@ -14,7 +14,7 @@ def generate(n_samples, c, lambds):
 
 
 def prob_x_given_z(x, z, lambds):
-    return scipy.stats.poisson.pmf(x, lambds[z])
+    return ps.pmf(x, lambds[z])
 
 
 def prob_x(x, c, lambds):
