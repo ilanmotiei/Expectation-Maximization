@@ -91,4 +91,4 @@ def Example(k, real_cs, real_lambds, nsample=1000):
 
 
 if __name__ == "__main__":
-    Example(k=5, real_cs=[0.3, 0.2, 0.3, 0.1, 0.1], real_lambds=[5, 30, 3, 20, 11])
+    Example(k=3, real_cs=[0.3, 0.4, 0.3], real_lambds=[5, 10, 11])
